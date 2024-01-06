@@ -12,30 +12,48 @@ const Contact = () => {
         <div className="contact-content">
           <div className="contact-title">Get in Touch!</div>
           <form>
-            <TextField
-              id="outlined-basic-name"
-              label="Name"
-              variant="outlined"
-              fullWidth
-              margin="normal"
-            />
-            <TextField
-              id="outlined-basic-email"
-              label="Email"
-              variant="outlined"
-              fullWidth
-              margin="normal"
-            />
-            <TextField
-              id="outlined-basic-message"
-              label="Your Message"
-              variant="outlined"
-              multiline
-              rows={4}
-              fullWidth
-              margin="normal"
-            />
-           
+          <TextField
+            id="outlined-basic-name"
+            label="Name"
+            variant="outlined"
+            fullWidth
+            margin="normal"
+            InputLabelProps={{
+              style: { color: 'white' }, 
+            }}
+            inputProps={{ style: { color: 'white' } }}
+
+          />
+
+          <TextField
+            id="outlined-basic-email"
+            label="Email"
+            variant="outlined"
+            fullWidth
+            margin="normal"
+            InputLabelProps={{
+              style: { color: 'white' },
+            }}
+            InputProps={{
+              style: { color: 'white', background: 'transparent' },
+            }}
+          />
+
+          <TextField
+            id="outlined-basic-message"
+            label="Your Message"
+            variant="outlined"
+            multiline
+            rows={4}
+            fullWidth
+            margin="normal"
+            InputLabelProps={{
+              style: { color: 'white' },
+            }}
+            InputProps={{
+              style: { color: 'white', background: 'transparent' },
+            }}
+          />        
           </form>
         </div>
       </div>

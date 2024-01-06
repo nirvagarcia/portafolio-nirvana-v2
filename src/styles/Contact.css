@@ -1,27 +1,58 @@
 #contact {
-    padding: 15% 5%;
-  }
+  padding: 15% 5%;
+}
   
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-avatar img {
+  width: auto;
+  height: 60vw;
+  margin-bottom: 20px;
+}
+
+.contact-content {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.contact-title {
+  font-size: 9vw;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.2%
+}
+
+.MuiTextField-root,
+.MuiButtonBase-root {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {     
+
   .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  
+
+  .contact-avatar {
+    margin-right: 20px;    
+  }
   .contact-avatar img {
-    width: auto;
-    height: 400px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    width: auto; 
+    height: 25rem;
   }
-  
-  .contact-content {
-    max-width: 1000px;
-    width: 100%;
-  }
-  
+    
   .contact-title {
-    font-size: 24px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
   }
@@ -29,21 +60,11 @@
   form {
     display: flex;
     flex-direction: column;
+    margin: 0 0.2%
   }
   
   .MuiTextField-root,
   .MuiButtonBase-root {
     margin-bottom: 20px;
   }
-  
-  @media (min-width: 600px) {
-    .contact-container {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  
-    .contact-avatar {
-      margin-right: 20px;
-    }
-  }
-  
+}
