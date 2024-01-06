@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  cursor:default;
 }
 
 .home-container {
@@ -15,13 +16,21 @@
 .home-avatar img {
   width: auto; 
   height: 25rem;
+  transition: all 0.2s;
+
+}
+
+.home-avatar img:hover {
+  transition: all 0.2s;
+  transform: rotate(5deg); 
 }
 
 .home-title {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin: 0 4%; 
 }
+
 
 .home-sub {
   font-size: 24px;
@@ -31,7 +40,7 @@
 
 .home-desc {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin: 0 4% 20px 4%;
 }
 
 .home-icons {
@@ -57,22 +66,22 @@
 
 
 @media (max-width: 400px) {  
-.home-title {
-  font-size: 40px;
-  margin-bottom: 5px;
-}      
-.home-sub {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
+  .home-title {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }      
+  .home-sub {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 
-.home-desc {
-  font-size: 16px;
-  margin-bottom: 20px;
-}      
+  .home-desc {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }      
 
-.home-icons .MuiButtonBase-root {
-  margin: 0 10px;
-  transform: scale(1.2);    
-}     
+  .home-icons .MuiButtonBase-root {
+    margin: 0 10px;
+    transform: scale(1.2);    
+  }     
 }

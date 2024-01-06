@@ -1,7 +1,3 @@
-#contact {
-  padding: 15% 5%;
-}
-  
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -11,7 +7,13 @@
 .contact-avatar img {
   width: auto;
   height: 60vw;
-  margin-bottom: 20px;
+  transition: all 0.2s;
+
+}
+
+.contact-avatar img:hover {
+  transition: all 0.2s;
+  transform: rotate(5deg); 
 }
 
 .contact-content {
@@ -23,6 +25,7 @@
   font-size: 9vw;
   font-weight: bold;
   margin-bottom: 20px;
+  cursor:default;
 }
 
 form {
@@ -35,9 +38,123 @@ form {
 .MuiButtonBase-root {
   margin-bottom: 20px;
 }
+button {
+  all: unset;
+}
+.contact-container .button {
+  background: rgb(72, 71, 71);
+  color: #fff;
+  font-size: 0.7em;
+  padding: 0.9em 2em;
+  border-radius: 50px;
+  text-decoration: none;  
+  transition: all 0.2s;
+  margin-top: 1rem;
+  box-shadow: none; 
+  cursor: pointer;
+}
 
-@media (min-width: 600px) {     
 
+.contact-container .button:hover {
+  background: rgb(56, 56, 56);
+  transition: all 0.2s;
+  transform: translateY(-7px);
+}
+
+.contact-container .button:disabled {
+  background: rgb(65, 64, 64);
+  cursor:not-allowed;
+}
+
+.contact-container .button:disabled:hover {
+  transform: translateY(0px);
+}
+
+.notification-modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(5px); 
+}
+
+.notification-modal {
+  background-color: rgba(255, 255, 255, 0.702); 
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.notification-modal #notification-modal-title {
+  font-size: 1rem;
+}
+
+.notification-modal #notification-modal-description {
+  font-size: 0.8rem;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  
+}
+
+.contact-card {
+  background: rgb(38, 38, 38);
+  padding: 1.3rem 1rem;
+  border-radius: 15px;
+  width: 12rem;  
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  color: white;
+}
+
+.contact-card:hover {
+  transition: all 0.2s;
+  background: rgb(65, 64, 64);
+  transform: translateY(-5px);
+
+}
+
+
+.contact-card .card-tittle {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contact-card .card-desc {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.contact-card img {
+  height: 2.6rem;
+  width: auto;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 830px) {     
+  .contact-cards{
+    display: none;
+  }
+}
+
+
+
+@media (min-width: 700px) {     
+  #contact {
+    padding: 5% 5%;
+  }
+ 
   .contact-container {
     flex-direction: row;
     justify-content: space-between;
@@ -67,4 +184,33 @@ form {
   .MuiButtonBase-root {
     margin-bottom: 20px;
   }
+
+  .contact-container .button {   
+    font-size: 0.6em;
+   
+  }
+
+  .notification-modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    backdrop-filter: blur(5px); 
+  }
+  
+  .notification-modal {
+    padding: 20px 50px;
+    text-align: center;
+    border-radius: 30px;
+  }
+
+  .notification-modal #notification-modal-title {
+    font-size: 1.5rem;
+  }
+  
+  .notification-modal #notification-modal-description {
+    font-size: 1rem;
+  }
+
+
 }

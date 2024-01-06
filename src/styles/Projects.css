@@ -74,9 +74,11 @@
 .card-icons .MuiSvgIcon-root {
     color: #bbbbbb;
     transform: scale(0.9);
+    transition: all 0.2s;
 }
 
 .card-icons .MuiSvgIcon-root:hover {
+    transition: all 0.2s;
     color: #888787;
 }
 

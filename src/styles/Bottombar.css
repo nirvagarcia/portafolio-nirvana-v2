@@ -16,6 +16,14 @@
     align-items: center;
     gap: 0.1rem;
 }
+
+.personalized-icon .MuiSvgIcon-root {
+    transition: all 0.2s;
+}
+.personalized-icon .MuiSvgIcon-root:hover {
+    transition: all 0.2s;
+    color: #888787;
+}
   
 @media only screen and (max-width: 600px) {  
     .bottombar-container .personalized-icon {
