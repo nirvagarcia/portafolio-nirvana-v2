@@ -4,16 +4,28 @@ import { IconButton } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
+import Typist from "react-typist";
 
 const Home = () => {
+
+  const renderText = () => {
+    return (
+      <span className="home-im">
+        <span className="home-nirvana">Nirvana</span>
+      </span>
+    );
+  };
+
+
   return (
     <div id="home">
       <div className="home-container">
         <div className="home-avatar">
           <img src="assets/avatar.png" alt="Avatar" />
         </div>
-        <div className="home-title" >
-          I'm Nirvana
+        <div className="home-title">
+        <Typist avgTypingDelay={100}>{renderText()}</Typist>
+
         </div>
         <div className="home-sub">Software Developer</div>
         <div className="home-desc">
@@ -37,7 +49,7 @@ const Home = () => {
           </IconButton>
           <IconButton
             aria-label="Email"
-            href="mailto:tuemail@example.com"
+            href="mailto:nirvagarciav@example.com"
           >
             <EmailIcon />
           </IconButton>

@@ -1,3 +1,4 @@
+
 #home {
   height: 100vh;
   display: flex;
@@ -14,22 +15,54 @@
 }
 
 .home-avatar img {
-  width: auto; 
+  width: auto;
   height: 25rem;
   transition: all 0.2s;
-
 }
 
 .home-avatar img:hover {
   transition: all 0.2s;
-  transform: rotate(5deg); 
+  transform: rotate(5deg);
 }
 
 .home-title {
   font-size: 60px;
   font-weight: bold;
-  margin: 0 4%; 
+  margin: 0 4%;
 }
+
+
+/*TYPISTTTTTTTT*/
+.Typist {
+  color: var(--text-subtitles);
+  text-align: center;
+  font-size: 76px;
+  margin-top: -30px;
+}
+
+.Typist .Cursor--blinking {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.home-im {
+  font-size: 80px;
+  
+}
+
+.home-nirvana {
+  font-weight: bold;
+  font-size: 86px;
+  
+}
+
+/*fin del typist*/
+
 
 
 .home-sub {
@@ -64,15 +97,14 @@
 @media (max-width: 800px) {
   .home-avatar img {
     height: 50vw;
-  }  
+  }
 }
 
-@media (max-width: 550px) {  
-
+@media (max-width: 550px) {
   .home-title {
     font-size: 40px;
     margin-bottom: 5px;
-  }      
+  }
   .home-sub {
     font-size: 20px;
     margin-bottom: 20px;
@@ -81,10 +113,10 @@
   .home-desc {
     font-size: 16px;
     margin: 20px 4% 20px 4%;
-  }      
+  }
 
   .home-icons .MuiButtonBase-root {
     margin: 0 10px;
-    transform: scale(1.2);    
-  }     
+    transform: scale(1.2);
+  }
 }
