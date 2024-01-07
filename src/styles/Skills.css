@@ -1,16 +1,16 @@
 #skills {
-    padding: 15%  20%;
+    padding: 15%  10%;
     cursor:default;
+    max-width: 1100px;
 }
 
-
 .skills-title {
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 400;
     margin-bottom: 3rem;
-  }
+    color: #b8b8b8;
+}
   
-
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -22,15 +22,26 @@
     max-width: 80px; 
     height: auto;
     margin: 10px; 
-    transition: transform 0.3s ease; 
+    transition: all 0.35s;
+
 }
 
 .skills-image:hover  {
-    transform: translateY(-7px);
+    transform: scale(1.15);
+    transition: all 0.35s;
+
 }
 
-@media only screen and (max-width: 1450px) {  
+@media only screen and (max-width: 600px) {  
     #skills {
-        padding: 15%  5%;
+        padding: 25%  5%;
     } 
+    .skills-title {
+        font-size: 5.5vw;      
+    }
+    .skills-image{       
+        width: 15vw;
+        height: auto; 
+      
+    }
 }

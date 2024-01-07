@@ -1,5 +1,5 @@
 #projects {
-    padding: 5% 2%;
+    padding: 5% 3%;
 }
  
 .projects-grid {
@@ -17,11 +17,14 @@
     background-color: #28282b;
     border-radius: 16px;
     transition: transform 0.3s ease; 
+    transition: all 0.2s;
+
 }
 
 .projects-card:hover {
     transform: translateY(-7px);
     background-color: #1a1a1a;
+    transition: all 0.2s;
 }
 
 .card-content {
@@ -89,10 +92,12 @@
 }
 
 @media (max-width: 1050px) {
+    #projects {
+        padding: 5% 8%;
+    }
     .projects-grid {
         grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     }
-    #projects {
-        padding: 5% 6%;
-    }
+    
+   
 }

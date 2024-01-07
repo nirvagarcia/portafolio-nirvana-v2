@@ -1,0 +1,33 @@
+.project-modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px); 
+    padding: 20px 50px;
+    text-align: center;
+  }
+
+  .project-modal {
+    background-color: rgba(255, 255, 255, 0.702); 
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-modal #project-info-modal-title {
+    font-size: 1.5rem;
+  }
+  
+  .project-modal #project-info-modal-type {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 700px) {     
+  
+      
+   
+  }

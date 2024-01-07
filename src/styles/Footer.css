@@ -1,0 +1,27 @@
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+  cursor: default;
+  background: rgb(33, 33, 33);
+  width: 100%;
+  padding: 25px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+}
+
+.footer-tittle {
+  font-size: 1rem;
+  color: #c8c8c8;
+  margin-left: 30px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {  
+  .footer-tittle {
+    font-size: 3vw;
+  }
+}

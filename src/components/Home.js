@@ -16,8 +16,7 @@ const Home = () => {
         <div className="home-sub">Software Developer</div>
         <div className="home-desc">
           Deeply passionate about Full-Stack, UX/UI design, Artificial
-          intelligence, and problem-solving. Based in Lima, Peru and currently
-          balancing work and university studies.
+          intelligence, and problem-solving. Based in Lima, Peru.
         </div>
         <div className="home-icons">
           <IconButton
@@ -37,7 +36,6 @@ const Home = () => {
           <IconButton
             aria-label="Email"
             href="mailto:tuemail@example.com"
-            target="_blank"
           >
             <EmailIcon />
           </IconButton>

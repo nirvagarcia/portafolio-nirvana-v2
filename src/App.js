@@ -1,6 +1,7 @@
 import './App.css';
 import Bottombar from './components/Bottombar';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
@@ -15,6 +16,7 @@ function App() {
         <Projects></Projects>
         <Skills></Skills>
         <Contact></Contact>
+        <Footer></Footer>
         <Bottombar></Bottombar>
       </header>
     </div>
