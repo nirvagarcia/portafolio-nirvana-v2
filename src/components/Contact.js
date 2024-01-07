@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { TextField, ThemeProvider, createTheme, Modal, IconButton } from "@mui/material";
 import "../styles/Contact.css";
 import emailjs from "emailjs-com";

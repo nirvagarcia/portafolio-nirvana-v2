@@ -4,7 +4,7 @@
   max-width: 500px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 
 .contact-container {
@@ -52,7 +52,8 @@ button {
   all: unset;
 }
 .contact-container .button {
-  background: rgb(72, 71, 71);
+  background: rgb(38, 38, 38);
+
   color: #fff;
   font-size: 0.9em;
   padding: 0.9em 2em;
@@ -65,14 +66,15 @@ button {
 }
 
 .contact-container .button:hover {
-  background: rgb(56, 56, 56);
+  background: rgb(48, 48, 48);
   transition: all 0.2s;
   transform: translateY(-7px);
 }
 
 .contact-container .button:disabled {
-  background: rgb(65, 64, 64);
+  background: rgb(38, 38, 38);
   cursor:not-allowed;
+  color: #545454;
 }
 
 .contact-container .button:disabled:hover {
@@ -127,7 +129,7 @@ button {
 
 .contact-card:hover {
   transition: all 0.2s;
-  background: rgb(65, 64, 64);
+  background: rgb(48, 48, 48);
   transform: translateY(-5px);
 }
 

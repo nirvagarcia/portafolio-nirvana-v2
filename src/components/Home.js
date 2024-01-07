@@ -12,7 +12,9 @@ const Home = () => {
         <div className="home-avatar">
           <img src="assets/avatar.png" alt="Avatar" />
         </div>
-        <div className="home-title">I'm Nirvana</div>
+        <div className="home-title" >
+          I'm Nirvana
+        </div>
         <div className="home-sub">Software Developer</div>
         <div className="home-desc">
           Deeply passionate about Full-Stack, UX/UI design, Artificial

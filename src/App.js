@@ -13,8 +13,8 @@ function App() {
       <header className="App-header">        
         <Navbar></Navbar>
         <Home></Home>
-        <Projects></Projects>
         <Skills></Skills>
+        <Projects></Projects>
         <Contact></Contact>
         <Footer></Footer>
         <Bottombar></Bottombar>

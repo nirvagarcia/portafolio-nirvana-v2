@@ -66,6 +66,7 @@ const Projects = () => {
     return (
         <div id="projects">
           <div className="projects-container">
+            <div className="skills-title">Hey! Check some of my projects</div>
             <ul className="projects-grid">
                 {Object.keys(projects).map((key, i) => (
                     <li className="projects-card" key={i}>
