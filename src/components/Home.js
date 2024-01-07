@@ -8,15 +8,6 @@ import Typist from "react-typist";
 
 const Home = () => {
 
-  const renderText = () => {
-    return (
-      <span className="home-im">
-        <span className="home-nirvana">Nirvana</span>
-      </span>
-    );
-  };
-
-
   return (
     <div id="home">
       <div className="home-container">
@@ -24,8 +15,9 @@ const Home = () => {
           <img src="assets/avatar.png" alt="Avatar" />
         </div>
         <div className="home-title">
-        <Typist avgTypingDelay={100}>{renderText()}</Typist>
-
+          <Typist avgTypingDelay={100}>
+            Hi
+          </Typist>
         </div>
         <div className="home-sub">Software Developer</div>
         <div className="home-desc">

@@ -28,7 +28,6 @@
 .home-title {
   font-size: 60px;
   font-weight: bold;
-  margin: 0 4%;
 }
 
 
@@ -36,8 +35,12 @@
 .Typist {
   color: var(--text-subtitles);
   text-align: center;
-  font-size: 76px;
+  font-size: 50px;
   margin-top: -30px;
+  margin-left: 0;
+  padding-left: 0;
+  margin: 0 4%;
+
 }
 
 .Typist .Cursor--blinking {
@@ -50,16 +53,9 @@
   }
 }
 
-.home-im {
-  font-size: 80px;
-  
-}
 
-.home-nirvana {
-  font-weight: bold;
-  font-size: 86px;
-  
-}
+
+
 
 /*fin del typist*/
 
