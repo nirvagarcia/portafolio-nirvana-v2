@@ -5,13 +5,12 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5); 
     backdrop-filter: blur(5px); 
-    padding: 20px 50px;
     text-align: center;
   }
 
   .project-modal {
     background-color: rgba(255, 255, 255, 0.702); 
-    padding: 20px 40px;
+    padding: 8px 15px;
     text-align: center;
     border-radius: 30px;
     align-items: center;
@@ -19,11 +18,15 @@
   }
 
   .project-modal #project-info-modal-title {
-    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    padding: 0 40px;
   }
   
   .project-modal #project-info-modal-type {
     font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 40px;
   }
 
   @media (max-width: 700px) {     

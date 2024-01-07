@@ -157,7 +157,7 @@ const Contact = () => {
                 <a className="contact-card" href="mailto:nirvagarciav@gmail.com">
                     <div className="card-tittle">Email</div>
                     <div className="card-desc">nirvagarciav@gmail.com</div>
-                    <img src="/assets/emailcontact.png" alt="Email" />
+                    <img src="/assets/email.png" alt="Email" />
                 </a>
                 <a
                     className="contact-card"
@@ -167,7 +167,7 @@ const Contact = () => {
                 >
                     <div className="card-tittle">WhatsApp</div>
                     <div className="card-desc">+51 986 689 120</div>
-                    <img src="/assets/whatsappcontact.png" alt="WhatsApp" />
+                    <img src="/assets/whatsapp.png" alt="WhatsApp" />
                 </a>
                 <a
                     className="contact-card"
@@ -177,7 +177,7 @@ const Contact = () => {
                 >
                     <div className="card-tittle">LinkedIn</div>
                     <div className="card-desc">Nirvana García</div>
-                    <img src="/assets/linkedincontact.png" alt="LinkedIn" />
+                    <img src="/assets/linkedin.png" alt="LinkedIn" />
                 </a>
             </div>
 
