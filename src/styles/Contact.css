@@ -34,7 +34,7 @@
   font-weight: 500;
   margin-bottom: 20px;
   cursor:default;
-  color: #d9d9d9;
+  color: var(--text); 
 }
 
 
@@ -54,7 +54,7 @@ button {
 .contact-container .button {
   background: rgb(38, 38, 38);
 
-  color: #fff;
+  color: var(--title);
   font-size: 0.9em;
   padding: 0.9em 2em;
   border-radius: 50px;
@@ -74,7 +74,7 @@ button {
 .contact-container .button:disabled {
   background: rgb(38, 38, 38);
   cursor:not-allowed;
-  color: #545454;
+  color: var(--btn_txt_disable);
 }
 
 .contact-container .button:disabled:hover {
@@ -86,12 +86,12 @@ button {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: var(--dark_opacity);
   backdrop-filter: blur(5px); 
 }
 
 .notification-modal {
-  background-color: rgba(255, 255, 255, 0.702); 
+  background-color: var(--background_modaL);
   padding: 20px 30px;
   text-align: center;
   border-radius: 30px;
@@ -113,7 +113,7 @@ button {
 }
 
 .contact-card {
-  background: rgb(38, 38, 38);
+  background: var(--cards);
   padding: 1.3rem 1rem;
   border-radius: 15px;
   width: 12rem;  
@@ -124,12 +124,12 @@ button {
   cursor: pointer;
   transition: all 0.2s;
   text-decoration: none;
-  color: white;
+  color: var(--title);
 }
 
 .contact-card:hover {
   transition: all 0.2s;
-  background: rgb(48, 48, 48);
+  background: var(--cards_hover);
   transform: translateY(-5px);
 }
 
@@ -175,7 +175,7 @@ button {
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 35px;
-    color: #d9d9d9;
+    color: var(--text); 
   }
   
   form {

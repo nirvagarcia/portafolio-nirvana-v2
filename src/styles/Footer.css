@@ -4,7 +4,7 @@
   justify-content: left;
   text-align: center;
   cursor: default;
-  background: rgb(33, 33, 33);
+  background: var(--background_bars);
   width: 100%;
   padding: 25px 0;
 }
@@ -15,7 +15,7 @@
 
 .footer-tittle {
   font-size: 1rem;
-  color: #c8c8c8;
+  color: var(--text);
   margin-left: 30px;
   width: 100%;
 }

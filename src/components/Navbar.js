@@ -15,7 +15,7 @@ return (
         <div className="navbar-container">
             <a href="#home" className="home-icon">
                 <IconButton aria-label="home" style={{padding:'0rem'}}>
-                <HomeIcon sx={{ color: 'white' }} />
+                <HomeIcon sx={{ color: 'var(--title)' }} />
                 </IconButton>
             </a>
 

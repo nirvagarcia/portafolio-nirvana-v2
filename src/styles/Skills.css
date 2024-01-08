@@ -7,7 +7,7 @@
 .skills-title {
     font-size: 30px;
     font-weight: 400;  
-    color: #b8b8b8;
+    color: var(--text);
 }
 
 .skills-options {
@@ -66,8 +66,8 @@
 .skill-text {
     font-size: 15px;
     margin-bottom: 4px; 
-    color: #b8b8b8;
-  }
+    color: var(--text); 
+}
 
 @media only screen and (max-width: 600px) {  
     #skills {

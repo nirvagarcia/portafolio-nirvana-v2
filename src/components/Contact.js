@@ -117,13 +117,13 @@ const Contact = () => {
                             value={formData.name}
                             sx={{
                                 '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                                borderColor: 'white',
+                                borderColor: 'var(--title)',
                                 },
                                 '& .MuiInputLabel-root.Mui-focused': {
-                                color: 'white',
+                                color: 'var(--title)',
                                 },
                                 '& input:-webkit-autofill, & input:-webkit-autofill:hover, & input:-webkit-autofill:focus, & input:-webkit-autofill:active': {
-                                boxShadow: '0 0 0 30px #1E1E1E inset !important',
+                                boxShadow: '0 0 0 30px var(--background) inset !important',
                                 },
                             }}
                             />
@@ -140,13 +140,13 @@ const Contact = () => {
                                 helperText={(formData.emailError && "Enter a valid email") || ""}
                                 sx={{
                                     '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                                        borderColor: 'white',
+                                        borderColor: 'var(--title)',
                                     },
                                     '& .MuiInputLabel-root.Mui-focused': {
-                                        color: 'white',
+                                        color: 'var(--title)',
                                     },
                                     '& input:-webkit-autofill, & input:-webkit-autofill:hover, & input:-webkit-autofill:focus, & input:-webkit-autofill:active': {
-                                    boxShadow: '0 0 0 30px #1E1E1E inset !important',
+                                    boxShadow: '0 0 0 30px var(--background) inset !important',
                                     },
                                 }}
                             />
@@ -162,13 +162,13 @@ const Contact = () => {
                                 value={formData.message}
                                 sx={{
                                     '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                                        borderColor: 'white',
+                                        borderColor: 'var(--title)',
                                     },
                                     '& .MuiInputLabel-root.Mui-focused': {
-                                        color: 'white',
+                                        color: 'var(--title)',
                                     },
                                     '& input:-webkit-autofill, & input:-webkit-autofill:hover, & input:-webkit-autofill:focus, & input:-webkit-autofill:active': {
-                                    boxShadow: '0 0 0 30px #1E1E1E inset !important',
+                                    boxShadow: '0 0 0 30px var(--background) inset !important',
                                     },
                                 }}
                             />

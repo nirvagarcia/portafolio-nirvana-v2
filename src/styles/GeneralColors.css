@@ -1,9 +1,19 @@
 :root {
   --background: #1E1E1E; 
-  --cards-background: #161b25;
-  --cards-hover: #12151e;  
-  --text: #8b92a6;
-  --text-subtitles: #c6c6c6;
-  --text-variant: #d2922b;
-  --text-variant-2: #cccccc;
+  --text: #b8b8b8;
+  --title: #D2D2D2;
+  --button: #bbbbbb;
+  --button_hover: #888888;
+
+  --background_bars: #25252573;
+  --bars_options_hover: #64646819;
+
+  --btn_txt_disable: #545454;
+
+  --background_modaL: #FFFFFFB3;
+  --dark_opacity: #00000080;
+
+  --cards: #262626;
+  --cards_hover: #303030;
+
 }

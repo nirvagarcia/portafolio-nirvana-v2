@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     position: relative;   
-    background-color: #28282b;
+    background-color: var(--cards);
     border-radius: 16px;
     transition: transform 0.3s ease; 
     transition: all 0.2s;
@@ -24,7 +24,7 @@
 
 .projects-card:hover {
     transform: translateY(-7px);
-    background-color: #1a1a1a;
+    background: var(--cards_hover);
     transition: all 0.2s;
 }
 

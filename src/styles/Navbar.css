@@ -6,7 +6,7 @@
     transform: translateX(-50%);
     width: 200px;
     padding: 8px 150px;
-    background-color: rgba(37, 37, 39, 0.45);
+    background-color: var(--background_bars);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px); 
     justify-content: center;
@@ -23,12 +23,12 @@
     text-decoration: none;
     padding: 10px 25px;
     font-size: 17px;
-    color: white;
+    color: var(--title);
     transition: all 0.2s;
 }  
 
 .navbar-container a:hover{
-    background-color: rgba(100, 100, 104, 0.1);
+    background-color: var(--bars_options_hover);
     backdrop-filter: blur(5px); 
     border-radius: 5rem;
     transition: all 0.2s;

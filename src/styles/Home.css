@@ -27,12 +27,12 @@
 .home-title {
   font-size: 60px;
   font-weight: bold;
-  color: rgb(210, 210, 210);
+  color: var(--title);
 }
 
 .home-sub {
   font-family: 'Fira Code', monospace;
-  color: rgb(210, 210, 210);
+  color: var(--title);
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 20px;
@@ -42,7 +42,7 @@
   
   font-size: 20px;
   margin: 0 4% 20px 4%;
-  color: #a4a4a4;
+  color: var(--text)
 }
 
 .home-desc img {
@@ -59,14 +59,14 @@
 .home-icons .MuiButtonBase-root {
   position: relative;
   margin: 0 10px;
-  color: #bbbbbb;
+  color: var(--button);
   transform: scale(1.5);
   transition: all 0.2s;
   padding-bottom: 4px;
 }
 
 .home-icons .MuiButtonBase-root:hover {
-  color: #888888;
+  color: var(--button_hover);
   transition: all 0.2s;
 }
 
@@ -77,7 +77,7 @@
   bottom: 0;
   width: 0; 
   height: 1px;
-  background-color: #888888; 
+  background-color: var(--button_hover);
   transition: width 0.2s ease-out;
 }
 
