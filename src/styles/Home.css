@@ -30,37 +30,6 @@
   font-weight: bold;
 }
 
-
-/*TYPISTTTTTTTT*/
-.Typist {
-  color: var(--text-subtitles);
-  text-align: center;
-  font-size: 50px;
-  margin-top: -30px;
-  margin-left: 0;
-  padding-left: 0;
-  margin: 0 4%;
-
-}
-
-.Typist .Cursor--blinking {
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
-
-
-
-
-/*fin del typist*/
-
-
-
 .home-sub {
   font-size: 30px;
   font-weight: 500;
