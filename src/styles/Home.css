@@ -110,4 +110,8 @@
     margin: 0 10px;
     transform: scale(1.2);
   }
+  .home-desc img {
+    width: 15px;
+  }
+  
 }
