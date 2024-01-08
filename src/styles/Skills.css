@@ -18,6 +18,8 @@
     gap: 0rem 1.2rem;
     margin-bottom: 1.3rem;
     padding: 0.5rem 0;  
+    margin-top: 5px;
+    
 }
 
 .skills-option {
@@ -28,6 +30,7 @@
     transition: all 0.3s;
     cursor: pointer;
     border: 3px solid #323232;
+    margin: 5px 0;
 }
 
 .skills-option:hover,
@@ -75,7 +78,10 @@
     }
     .skills-image{       
         width: 15vw;
-        height: auto; 
-      
+        height: auto;       
+    }
+    .skills-options {      
+        gap: 1px 12px;     
+        
     }
 }
