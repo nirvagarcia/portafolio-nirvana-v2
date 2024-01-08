@@ -6,11 +6,37 @@
 
 .skills-title {
     font-size: 30px;
-    font-weight: 400;
-    margin-bottom: 3rem;
+    font-weight: 400;  
     color: #b8b8b8;
 }
-  
+
+.skills-options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem 1.2rem;
+    margin-bottom: 1.3rem;
+    padding: 0.5rem 0;  
+}
+
+.skills-option {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 3px solid #323232;
+}
+
+.skills-option:hover,
+.skills-option.selected {
+    background-color: #292929;
+    border: 3px solid #292929;
+    transition: all 0.3s;
+}
+
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -18,18 +44,27 @@
     gap: 1rem 1.2rem;
 }
 
+.skill-item  {  
+    transition: all 0.2s;
+}
+  
+.skill-item:hover {
+    transition: all 0.2s;
+    transform: translateY(-5px);
+}
+
 .skills-image {
     max-width: 80px; 
     height: auto;
-    object-fit: scale-down;
+    object-fit: cover;
     margin: 10px; 
-    transition: all 0.35s;
 }
 
-.skills-image:hover  {
-    transform: scale(1.15);
-    transition: all 0.35s;
-}
+.skill-text {
+    font-size: 15px;
+    margin-bottom: 4px; 
+    color: #b8b8b8;
+  }
 
 @media only screen and (max-width: 600px) {  
     #skills {

@@ -24,14 +24,15 @@
     padding: 10px 25px;
     font-size: 17px;
     color: white;
-    transition: transform 0.3s ease; 
+    transition: all 0.2s;
 }  
 
 .navbar-container a:hover{
     background-color: rgba(100, 100, 104, 0.1);
     backdrop-filter: blur(5px); 
     border-radius: 5rem;
-    transform: scale(1.1);     
+    transition: all 0.2s;
+  
 }
 
 @media only screen and (max-width: 600px) {

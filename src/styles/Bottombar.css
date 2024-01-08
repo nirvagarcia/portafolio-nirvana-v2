@@ -22,7 +22,7 @@
 }
 .personalized-icon .MuiSvgIcon-root:hover {
     transition: all 0.2s;
-    color: #888787;
+    transform: scale(1.2);    
 }
   
 @media only screen and (max-width: 600px) {  

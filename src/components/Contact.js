@@ -67,10 +67,39 @@ const Contact = () => {
         <div id="contact">
             <div className="skills-title">Trying to Contact me?</div>
 
+
+            <div className="contact-cards">
+                <a className="contact-card" href="mailto:nirvagarciav@gmail.com">
+                    <div className="card-tittle">Email</div>
+                    <div className="card-desc">nirvagarciav@gmail.com</div>
+                    <img src="/assets/email.png" alt="Email" />
+                </a>
+                <a
+                    className="contact-card"
+                    href="https://wa.me/51986689120?text=Hola%20Nirvana!%20vine%20de%20tu%20portafolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <div className="card-tittle">WhatsApp</div>
+                    <div className="card-desc">+51 986 689 120</div>
+                    <img src="/assets/whatsapp.png" alt="WhatsApp" />
+                </a>
+                <a
+                    className="contact-card"
+                    href="https://www.linkedin.com/in/nirvana-garcia-vasquez"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <div className="card-tittle">LinkedIn</div>
+                    <div className="card-desc">Nirvana García</div>
+                    <img src="/assets/linkedin.png" alt="LinkedIn" />
+                </a>
+            </div>
+
+
             <div className="contact-container">
-                <div className="contact-avatar">
-                    <img src="assets/avatar.png" alt="Avatar" />
-                </div>
+              
+              
                 
                 <div className="contact-content">
                     <form onSubmit={handleSubmit}>
@@ -153,34 +182,7 @@ const Contact = () => {
 
                 
             </div>
-            <div className="contact-cards">
-                <a className="contact-card" href="mailto:nirvagarciav@gmail.com">
-                    <div className="card-tittle">Email</div>
-                    <div className="card-desc">nirvagarciav@gmail.com</div>
-                    <img src="/assets/email.png" alt="Email" />
-                </a>
-                <a
-                    className="contact-card"
-                    href="https://wa.me/51986689120?text=Hola%20Nirvana!%20vine%20de%20tu%20portafolio"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <div className="card-tittle">WhatsApp</div>
-                    <div className="card-desc">+51 986 689 120</div>
-                    <img src="/assets/whatsapp.png" alt="WhatsApp" />
-                </a>
-                <a
-                    className="contact-card"
-                    href="https://www.linkedin.com/in/nirvana-garcia-vasquez"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <div className="card-tittle">LinkedIn</div>
-                    <div className="card-desc">Nirvana García</div>
-                    <img src="/assets/linkedin.png" alt="LinkedIn" />
-                </a>
-            </div>
-
+          
 
             <Modal
                 open={showNotification}

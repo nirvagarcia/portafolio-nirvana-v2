@@ -10,11 +10,18 @@ const Projects = () => {
 
     const [showInfoModal, setShowInfoModal] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
+    const [selectedType, setSelectedType] = useState("All");
 
     const handleInfoClick = (project) => {
         setShowInfoModal(true);
         setSelectedProject(project);
-    };  
+    };
+
+    const handleTypeClick = (type) => {
+        setSelectedType(type);
+    };
+
+    const isTypeSelected = (type) => type === selectedType;
 
     const projects = {
         "AKIRA E-Commerce": {
@@ -22,7 +29,7 @@ const Projects = () => {
             cardimage: "/assets/akira.png",
             desc: "Asian entertainment E-Commerce, using AngularJS",
             techStack: "Angular.js, MySQL, Javascript",
-            type: "Full-Stack Project",
+            type: "Fullstack",
             link: "https://github.com/nirvagarcia/pangea-ghibli",
             open: "https://pangea-ghibli.vercel.app/"
         },
@@ -31,7 +38,7 @@ const Projects = () => {
             cardimage: "/assets/pangea.png",
             desc: "Studio Ghibli Streaming platform, using ReactJS",
             techStack: "React.js, Typescript, NodeJS",
-            type: "Front-End Project",
+            type: "Frontend",
             link: "https://github.com/nirvagarcia/pangea-ghibli",
             open: "https://pangea-ghibli.vercel.app/"
         },
@@ -40,7 +47,7 @@ const Projects = () => {
             cardimage: "/assets/maps.png",
             desc: "GoogleMaps API integration, using ReactJS",
             techStack: "React.js, Javascript, NodeJS",
-            type: "Full-stack Project",
+            type: "API",
             open: "https://googlemaps-api.vercel.app/"
         },
         "Financial Tool": {
@@ -48,7 +55,7 @@ const Projects = () => {
             cardimage: "/assets/mivivienda.png",
             desc: "'Mi Vivienda' Financial simulator, using VueJS",
             techStack: "React.js, Node.js, MySQL, Javascript",
-            type: "Full-Stack Project",
+            type: "Fullstack",
             link: "https://github.com/nirvagarcia/pangea-ghibli",
             open: "https://pangea-ghibli.vercel.app/"
         },
@@ -57,7 +64,7 @@ const Projects = () => {
             cardimage: "/assets/bea.png",
             desc: "Biographical page of Beabadoobe, 23 year old Filipino singer and songwriter.",
             techStack: "Vue.js, Node.js, MySQL, Javascript",
-            type: "Front-End Project",
+            type: "Frontend",
             link: "https://github.com/nirvagarcia/pangea-ghibli",
             open: "https://pangea-ghibli.vercel.app/"
         }   
@@ -67,9 +74,47 @@ const Projects = () => {
         <div id="projects">
           <div className="projects-container">
             <div className="skills-title">Hey! Check some of my projects</div>
+            <div className="skills-options">
+                <p
+                  className={`skills-option ${isTypeSelected("All") && "selected"}`}
+                  onClick={() => handleTypeClick("All")}
+                >
+                    All
+                </p>
+                <p
+                    className={`skills-option ${isTypeSelected("Frontend") && "selected"}`}
+                    onClick={() => handleTypeClick("Frontend")}
+                >
+                    Frontend
+                </p>
+                <p
+                    className={`skills-option ${isTypeSelected("API") && "selected"}`}
+                    onClick={() => handleTypeClick("API")}
+                >
+                    +API
+                </p>
+                <p
+                   className={`skills-option ${isTypeSelected("Fullstack") && "selected"}`}
+                   onClick={() => handleTypeClick("Fullstack")}
+                >
+                    Fullstack
+                </p>
+                <p
+                   className={`skills-option ${isTypeSelected("Mobile") && "selected"}`}
+                   onClick={() => handleTypeClick("Mobile")}
+                >
+                    Mobile
+                </p>
+                <p
+                    className={`skills-option ${isTypeSelected("Figma") && "selected"}`}
+                    onClick={() => handleTypeClick("Figma")}
+                >
+                    Figma
+                </p>           
+            </div>
             <ul className="projects-grid">
                 {Object.keys(projects).map((key, i) => (
-                    <li className="projects-card" key={i}>
+                    <li className={`projects-card ${isTypeSelected(projects[key]["type"]) && "selected"}`} key={i}>
                         <div
                             className="card-image"
                             style={{ backgroundImage: `url(${projects[key]["cardimage"]})` }}
