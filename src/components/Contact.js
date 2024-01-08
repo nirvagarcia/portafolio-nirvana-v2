@@ -3,6 +3,7 @@ import { TextField, ThemeProvider, createTheme, Modal, IconButton } from "@mui/m
 import "../styles/Contact.css";
 import emailjs from "emailjs-com";
 import CloseIcon from "@mui/icons-material/Close";
+import SectionEffect from "./SectionEffect";
 
 const darkTheme = createTheme({
   palette: {
@@ -64,7 +65,9 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact">
+
+        <SectionEffect>
+   <div id="contact">
             <div className="skills-title">Trying to Contact me?</div>
 
 
@@ -208,6 +211,8 @@ const Contact = () => {
             </Modal>
          
         </div>
+        </SectionEffect>
+     
     );
 };
 

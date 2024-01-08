@@ -5,6 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import InfoIcon from "@mui/icons-material/Info";
 import ProjectInfoModal from "./ProjectInfoModal";
+import SectionEffect from "./SectionEffect";
 
 const Projects = () => {  
 
@@ -71,7 +72,8 @@ const Projects = () => {
     };
 
     return (
-        <div id="projects">
+        <SectionEffect>
+  <div id="projects">
           <div className="projects-container">
             <div className="skills-title">Hey! Check some of my projects</div>
             <div className="skills-options">
@@ -161,6 +163,8 @@ const Projects = () => {
             />
 
         </div>
+        </SectionEffect>
+      
     );
 };
     

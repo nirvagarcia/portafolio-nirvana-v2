@@ -1,4 +1,5 @@
 import './App.css';
+import "./styles/GeneralColors.css";
 import Bottombar from './components/Bottombar';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
