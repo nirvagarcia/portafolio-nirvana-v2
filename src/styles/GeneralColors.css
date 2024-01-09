@@ -17,15 +17,15 @@
   --background-light: #d2d2d2;
   --text-light: #575757;
   --title-light: #323232; 
-  --button-light: #eeeeee;
-  --button_hover-light: #dddddd;
+  --button-light: #464646;
+  --button_hover-light: #444444;
   --background_bars-light: #f0f0f09a;
   --bars_options_hover-light: #cccccc;
   --btn_txt_disable-light: #aaaaaa;
   --background_modaL-light: #FFFFFF;
   --dark_opacity-light: #00000036;
-  --cards-light: #979797;
-  --cards_hover-light: #7c7c7c;
+  --cards-light: #c5c5c5;
+  --cards_hover-light: #acacac;
 }
 
 [data-theme="light"] {

@@ -29,14 +29,14 @@
     border-radius: 20px;
     transition: all 0.3s;
     cursor: pointer;
-    border: 3px solid #323232;
+    border: 2px solid var(--cards_hover);
     margin: 5px 0;
 }
 
 .skills-option:hover,
 .skills-option.selected {
-    background-color: #292929;
-    border: 3px solid #292929;
+    background-color: var(--cards);
+    border: 2px solid var(--cards);
     transition: all 0.3s;
 }
 
