@@ -1,19 +1,44 @@
 :root {
-  --background: #1E1E1E; 
+  /* Dark Mode */
+  --background: #1E1E1E;
   --text: #b8b8b8;
   --title: #D2D2D2;
   --button: #bbbbbb;
   --button_hover: #888888;
-
   --background_bars: #25252573;
   --bars_options_hover: #64646819;
-
   --btn_txt_disable: #545454;
-
   --background_modaL: #FFFFFFB3;
   --dark_opacity: #00000080;
-
   --cards: #262626;
   --cards_hover: #303030;
 
+  /* Light Mode */
+  --background-light: #d2d2d2;
+  --text-light: #575757;
+  --title-light: #323232; 
+  --button-light: #eeeeee;
+  --button_hover-light: #dddddd;
+  --background_bars-light: #f0f0f09a;
+  --bars_options_hover-light: #cccccc;
+  --btn_txt_disable-light: #aaaaaa;
+  --background_modaL-light: #FFFFFF;
+  --dark_opacity-light: #00000036;
+  --cards-light: #979797;
+  --cards_hover-light: #7c7c7c;
+}
+
+[data-theme="light"] {
+  --background: var(--background-light);
+  --text: var(--text-light);
+  --title: var(--title-light);
+  --button: var(--button-light);
+  --button_hover: var(--button_hover-light);
+  --background_bars: var(--background_bars-light);
+  --bars_options_hover: var(--bars_options_hover-light);
+  --btn_txt_disable: var(--btn_txt_disable-light);
+  --background_modaL: var(--background_modaL-light);
+  --dark_opacity: var(--dark_opacity-light);
+  --cards: var(--cards-light);
+  --cards_hover: var(--cards_hover-light);
 }

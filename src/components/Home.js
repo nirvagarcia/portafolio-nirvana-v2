@@ -10,12 +10,12 @@ import SectionEffect from "./SectionEffect";
 const Home = () => {
 
   const  [software] = useTypewriter({
-    words: ['Software Developer', 'Software Enjoyer'], 
+    words: ['Developer', 'Enjoyer'], 
     loop: {},
     typeSpeed: 110, 
-    deleteSpeed: 30,
+    deleteSpeed: 60,
   })
-
+  
   return (   
     
     <div id="home">
@@ -26,7 +26,7 @@ const Home = () => {
           </div>
           <div className="home-title">Nirvana García</div>     
           <div className="home-sub">  
-            {software} 
+            Software {software} 
             <Cursor/>
           </div>    
           <div className="home-desc">

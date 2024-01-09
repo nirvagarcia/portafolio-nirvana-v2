@@ -1,17 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Bottombar.css";
 import { IconButton } from "@mui/material";
+import { useTheme } from "./ThemeContext";
 
 const Bottombar = () => {
   const [, setLanguage] = useState("EN");
-  const [darkMode, setDarkMode] = useState(false);
+  const { darkMode, toggleDarkMode } = useTheme();
+
+  useEffect(() => {
+    document.body.setAttribute("data-theme", darkMode ? "dark" : "light");
+  }, [darkMode]);
 
   const toggleLanguage = () => {
     setLanguage((prevLanguage) => (prevLanguage === "EN" ? "ES" : "EN"));
-  };
-
-  const toggleDarkMode = () => {
-    setDarkMode((prevDarkMode) => !prevDarkMode);
   };
 
   const openLinkedInProfile = () => {
@@ -19,7 +20,7 @@ const Bottombar = () => {
   };
 
   return (
-    <div className="bottombar">
+    <div className={`bottombar ${darkMode ? 'dark' : 'light'}`}>
       <div className="bottombar-container">
         <div className="personalized-icon">
           <IconButton aria-label="linkedin" onClick={openLinkedInProfile}>
@@ -34,9 +35,9 @@ const Bottombar = () => {
         <div className="personalized-icon">
           <IconButton aria-label="dark-mode" onClick={toggleDarkMode}>
             {darkMode ? (
-              <img src="/assets/sun.png" alt="Dark Mode" style={{ width: '25px', height: '25px' }} />
+              <img src="/assets/moon.png" alt="Dark Mode" style={{ width: '25px', height: '25px' }} />
             ) : (
-              <img src="/assets/moon.png" alt="Light Mode" style={{ width: '25px', height: '25px' }} />
+              <img src="/assets/sun.png" alt="Light Mode" style={{ width: '25px', height: '25px' }} />
             )}
           </IconButton>
         </div>
