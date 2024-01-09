@@ -14,20 +14,21 @@
   --cards_hover: #303030;
 
   /* Light Mode */
-  --background-light: #d2d2d2;
+  --background-light: #e0e0e0;
   --text-light: #575757;
   --title-light: #323232; 
   --button-light: #464646;
   --button_hover-light: #444444;
-  --background_bars-light: #f0f0f09a;
+  --background_bars-light: #ffffff9a;
   --bars_options_hover-light: #cccccc;
   --btn_txt_disable-light: #aaaaaa;
   --background_modaL-light: #FFFFFF;
   --dark_opacity-light: #00000036;
-  --cards-light: #c5c5c5;
-  --cards_hover-light: #acacac;
+  --cards-light: #cecece;
+  --cards_hover-light: #c5c5c5;
 }
 
+/*Theme Change Logic*/
 [data-theme="light"] {
   --background: var(--background-light);
   --text: var(--text-light);

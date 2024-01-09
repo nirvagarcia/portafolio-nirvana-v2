@@ -52,7 +52,7 @@ button {
   all: unset;
 }
 .contact-container .button {
-  background: rgb(38, 38, 38);
+  background: var(--cards_hover);
 
   color: var(--title);
   font-size: 0.9em;

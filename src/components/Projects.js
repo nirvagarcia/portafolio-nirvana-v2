@@ -4,8 +4,8 @@ import { IconButton } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import InfoIcon from "@mui/icons-material/Info";
-import ProjectInfoModal from "./ProjectInfoModal";
-import SectionEffect from "./SectionEffect";
+import ProjectInfoModal from "../auxiliars/ProjectInfoModal";
+import SectionEffect from "../auxiliars/SectionEffect";
 
 const Projects = () => {  
 

@@ -3,7 +3,7 @@ import { TextField, ThemeProvider, createTheme, Modal, IconButton } from "@mui/m
 import "../styles/Contact.css";
 import emailjs from "emailjs-com";
 import CloseIcon from "@mui/icons-material/Close";
-import SectionEffect from "./SectionEffect";
+import SectionEffect from "../auxiliars/SectionEffect";
 
 const darkTheme = createTheme({
   palette: {

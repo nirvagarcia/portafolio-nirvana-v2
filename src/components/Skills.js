@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Skills.css";
-import SectionEffect from "./SectionEffect";
+import SectionEffect from "../auxiliars/SectionEffect";
 
 const skillsData = [
     {

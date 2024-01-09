@@ -5,15 +5,15 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import SectionEffect from "./SectionEffect";
+import SectionEffect from "../auxiliars/SectionEffect";
 
 const Home = () => {
 
   const  [software] = useTypewriter({
     words: ['Developer', 'Enjoyer'], 
     loop: {},
-    typeSpeed: 110, 
-    deleteSpeed: 60,
+    typeSpeed: 130, 
+    deleteSpeed: 80,
   })
   
   return (   

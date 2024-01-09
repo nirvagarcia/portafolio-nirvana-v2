@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Bottombar.css";
 import { IconButton } from "@mui/material";
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "../auxiliars/ThemeContext";
 
 const Bottombar = () => {
   const [, setLanguage] = useState("EN");
