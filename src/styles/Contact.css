@@ -37,7 +37,6 @@
   color: var(--text); 
 }
 
-
 form {
   display: flex;
   flex-direction: column;
@@ -52,8 +51,7 @@ button {
   all: unset;
 }
 .contact-container .button {
-  background: var(--cards_hover);
-
+  background: var(--cards);
   color: var(--title);
   font-size: 0.9em;
   padding: 0.9em 2em;
@@ -66,13 +64,13 @@ button {
 }
 
 .contact-container .button:hover {
-  background: rgb(48, 48, 48);
+  background: var(--cards_hover);
   transition: all 0.2s;
   transform: translateY(-7px);
 }
 
 .contact-container .button:disabled {
-  background: rgb(38, 38, 38);
+  background:  var(--cards_hover);
   cursor:not-allowed;
   color: var(--btn_txt_disable);
 }

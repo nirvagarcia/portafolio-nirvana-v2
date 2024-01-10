@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../styles/Skills.css";
-import SectionEffect from "../auxiliars/SectionEffect";
 
 const skillsData = [
     {
@@ -90,14 +89,9 @@ const skillsData = [
     },   
 ];
 
-
 const Skills = () => {
     const [selectedOption, setSelectedOption] = useState("All");
-
-    const handleOptionClick = (option) => {
-        setSelectedOption(option);
-    };
-
+    const handleOptionClick = (option) => {setSelectedOption(option);};
     const isOptionSelected = (option) => option === selectedOption;
 
     const filteredSkills = selectedOption === "All"
@@ -105,9 +99,7 @@ const Skills = () => {
         : skillsData.filter((skill) => skill.type === selectedOption);
 
     return (
-
-
-            <div id="skills">
+        <div id="skills">
             
             <div className="skills-container">
                 <div className="skills-title">I've been working with</div>
@@ -165,8 +157,7 @@ const Skills = () => {
                 ))}
                 </div>
             </div>
-            </div>
-    
+        </div>    
     );
 };
 
