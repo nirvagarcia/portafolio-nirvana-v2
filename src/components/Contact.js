@@ -118,15 +118,28 @@ const Contact = () => {
                                 value={formData.name}
                                 sx={{
                                     '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                                    borderColor: 'var(--title)',
+                                      borderColor: 'var(--title)',
                                     },
                                     '& .MuiInputLabel-root.Mui-focused': {
-                                    color: 'var(--title)',
+                                      color: 'var(--title)',
                                     },
                                     '& input:-webkit-autofill, & input:-webkit-autofill:hover, & input:-webkit-autofill:focus, & input:-webkit-autofill:active': {
-                                    boxShadow: '0 0 0 30px var(--background) inset !important',
+                                      boxShadow: '0 0 0 30px var(--background) inset !important',
+                                      WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                      '&:-webkit-autofill': {
+                                        WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                      },
+                                      '&:-webkit-autofill:hover': {
+                                        WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                      },
+                                      '&:-webkit-autofill:focus': {
+                                        WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                      },
+                                      '&:-webkit-autofill:active': {
+                                        WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                      },
                                     },
-                                }}
+                                  }}
                                 />
 
                                 <TextField
@@ -141,15 +154,28 @@ const Contact = () => {
                                     helperText={(formData.emailError && "Enter a valid email") || ""}
                                     sx={{
                                         '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                                            borderColor: 'var(--title)',
+                                          borderColor: 'var(--title)',
                                         },
                                         '& .MuiInputLabel-root.Mui-focused': {
-                                            color: 'var(--title)',
+                                          color: 'var(--title)',
                                         },
                                         '& input:-webkit-autofill, & input:-webkit-autofill:hover, & input:-webkit-autofill:focus, & input:-webkit-autofill:active': {
-                                        boxShadow: '0 0 0 30px var(--background) inset !important',
+                                          boxShadow: '0 0 0 30px var(--background) inset !important',
+                                          WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                          '&:-webkit-autofill': {
+                                            WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                          },
+                                          '&:-webkit-autofill:hover': {
+                                            WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                          },
+                                          '&:-webkit-autofill:focus': {
+                                            WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                          },
+                                          '&:-webkit-autofill:active': {
+                                            WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                          },
                                         },
-                                    }}
+                                      }}
                                 />
                                 <TextField
                                     id="message"
@@ -163,15 +189,28 @@ const Contact = () => {
                                     value={formData.message}
                                     sx={{
                                         '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                                            borderColor: 'var(--title)',
+                                          borderColor: 'var(--title)',
                                         },
                                         '& .MuiInputLabel-root.Mui-focused': {
-                                            color: 'var(--title)',
+                                          color: 'var(--title)',
                                         },
                                         '& input:-webkit-autofill, & input:-webkit-autofill:hover, & input:-webkit-autofill:focus, & input:-webkit-autofill:active': {
-                                        boxShadow: '0 0 0 30px var(--background) inset !important',
+                                          boxShadow: '0 0 0 30px var(--background) inset !important',
+                                          WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                          '&:-webkit-autofill': {
+                                            WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                          },
+                                          '&:-webkit-autofill:hover': {
+                                            WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                          },
+                                          '&:-webkit-autofill:focus': {
+                                            WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                          },
+                                          '&:-webkit-autofill:active': {
+                                            WebkitBoxShadow: '0 0 0 30px var(--background) inset !important',
+                                          },
                                         },
-                                    }}
+                                      }}
                                 />
                             </ThemeProvider>
                             <button

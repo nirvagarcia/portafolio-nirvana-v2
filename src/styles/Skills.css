@@ -1,13 +1,13 @@
 #skills {
     padding: 15%  10%;
     cursor:default;
-    max-width: 1100px;
+    max-width: 1100px;    
 }
 
 .skills-title {
     font-size: 30px;
     font-weight: 400;  
-    color: var(--text);
+    color: var(--text); 
 }
 
 .skills-options {
@@ -20,7 +20,6 @@
     padding: 0.5rem 0;  
     margin-top: 5px;
     color: var(--title);
-    border: 1px solid transparent;
 }
 
 .skills-option {
@@ -31,25 +30,25 @@
     transition: all 0.3s;
     cursor: pointer;
     border: 2px solid var(--cards_hover);
-    margin: 5px 0;
+    margin: 5px 0;    
 }
 
 .skills-option:hover,
 .skills-option.selected {
     background-color: var(--cards);
     border: 2px solid var(--cards);
-    transition: all 0.3s;
+    transition: all 0.3s;    
 }
 
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem 1.2rem;
+    gap: 1rem 1.2rem;    
 }
 
 .skill-item  {  
-    transition: all 0.2s;
+    transition: all 0.2s;    
 }
   
 .skill-item:hover {
@@ -67,7 +66,7 @@
 .skill-text {
     font-size: 15px;
     margin-bottom: 4px; 
-    color: var(--text); 
+    color: var(--text);     
 }
 
 @media only screen and (max-width: 600px) {  
@@ -82,7 +81,6 @@
         height: auto;       
     }
     .skills-options {      
-        gap: 1px 12px;    
-        border: 1px solid var(--cards_hover);        
+        gap: 1px 12px;            
     }
 }
