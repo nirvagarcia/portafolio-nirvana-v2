@@ -1,7 +1,10 @@
 #projects {
-    padding: 5% 3%;
     cursor: default;
+    padding: 5% 3%;
+    width: 100%;
+    box-sizing: border-box;
 }
+
  
 .projects-grid {
     display: grid;
